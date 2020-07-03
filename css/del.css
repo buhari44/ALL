@@ -1,0 +1,106 @@
+body{
+    font-size:15px;;
+    font-family:monospace;
+    line-height:1.6rem;
+    margin:0
+}
+#container{
+    width: 90%;
+    margin:auto;
+    overflow: hidden;
+}
+.mainheader{
+    background-color:blue;
+  color:white;
+  
+}
+.navbar{
+    background:#333;
+  text-transform:uppercase;
+  position:sticky;
+  top:0;
+}
+.navbar ul{
+    padding:0;
+  margin: 0
+}
+.navbar li{
+ display:inline;
+ list-style: none;
+ font-size:20px;
+ 
+}
+.navbar a{
+    text-decoration: none;
+    color:white;
+    padding:10px;
+}
+.navbar  a:hover{
+    background: white;
+    color:black
+}
+.first{
+    background: white;
+    color:blue;
+}
+.second{
+    width:20%;
+    float: left;
+    border-right:2px solid black
+}
+.aside{
+    width:50%;
+    float:right;
+}
+#target{
+    width: 50%;
+  height:50%;
+  border:2px solid red;
+  position:relative;
+  left:50px;
+  padding:80px;
+  margin:8px;
+    }
+    #end{
+        background:blue;
+        color:white;
+        font-size:20px;
+        padding-bottom: 10px;
+        margin:10px;
+    }
+    #target span:first-child{
+        text-transform:uppercase;
+        position:absolute;
+        top:30px;
+    }
+    #target span:last-child{
+        text-transform:uppercase;
+        position: absolute;
+        right:40px;
+        bottom:30px
+
+    }
+    h4{
+        position: fixed;
+        background:yellow;
+        bottom:0;
+        right:50px;
+    }
+    
+@media(max-width:600px){
+    .second,.aside{
+        width:100%;
+        float: none;
+        border:none
+    }
+}
+@media(min-width:600px){
+    .clear{
+        clear: both;
+    }
+}
+@media(max-width:360px){
+    .navbar a{
+     padding:2px;
+    }
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .wrapper{
+        display:grid;
+        grid-template-rows:1fr;
+        grid-gap:15em
+    }
+    .wrapper >div{
+   padding:25px;
+    }
+    .box1{
+        display:grid;
+        grid-template-columns: 1fr 4fr;
+        position:sticky;
+        top:0;
+        background:rgba(26,26,26,0.7)
+    }
+    li{
+        display:inline;
+        padding:15px;
+        
+    }
+    a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size:10px;
+        color:white;
+        font-size: 15px;
+        
+    }
+    .box2{
+        display: grid;
+        grid-template-columns:2fr 3fr;
+        justify-content:stretch;
+        align-items:stretch;
+        grid-auto-rows: minmax(100px,auto);
+
+    }
+  
+  
+  .inbox3{
+      text-align:start;
+      color:white;
+      font-family:monospace
+  }
+    span{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size:20px;
+   text-decoration: underline;
+   color:blue
+    }  
+
+  
+  .wrapper{
+    background: linear-gradient(rgba(26,26,26,0.7),rgba(26,26,26,0.7)),url("./images/20.jpeg");
+    background-size: cover;
+    background-repeat:no-repeat
+  }
+  .inbox1{
+      font-size:20px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   border:2px solid blue;
+   border-radius:30%;
+   border-left: 10px;
+   color: white
+  }
+   .inbox2{
+       text-align:center
+   }
+   .container{
+       display:grid;
+       grid-template-rows:1fr;
+       
+   }
+   .firstbox{
+       
+       justify-self: center
+   }
+   .secondbox{
+   display:grid;
+   grid-template-columns:repeat(3,1fr);
+   grid-gap:2em;
+   margin:0 20% 0 20%;
+   text-align:end;
+   color:blue;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size:50px
+   
+   }
+   
+   .img1{
+       text-align:center;
+       width: 100%;
+       height: 150%;
+       padding:10px;
+
+       background:linear-gradient(rgba(26,26,26,0.7),rgba(26,26,26,0.7)),url("./images/15.jpg");
+       background-size: cover;
+       background-repeat: no-repeat
+      
+        }
+        .img2{
+            text-align:center;
+            width: 110%;
+       height: 190%;
+            background:linear-gradient(rgba(26,26,26,0.7),rgba(26,26,26,0.7)),url("./images/16.jpg");
+       background-size: cover;
+       background-repeat:no-repeat
+      
+        }
+        .img3{
+            width: 110%;
+       height: 170%;
+            background:linear-gradient(rgba(26,26,26,0.7),rgba(26,26,26,0.7)),url("./images/17.png");
+       background-size: cover;
+       background-repeat: no-repeat
+      
+        }
+        .contact{
+            display: grid;
+            margin-top:10%;
+            grid-template-columns: 1fr;
+            grid-auto-rows:minmax(100px,auto);
+            justify-content: center;
+            background: rgba(121, 142, 212, 0.7);
+            
+        }
+        @media(max-width:600px){
+            a{
+                font-size:7px
+            }
+            .firstbox{
+                justify-self: start
+            }
+            .secondbox{
+                display:grid;
+                grid-template-columns:1fr
+            }
+        }
+        form{
+            text-align: center
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div class="box1">
+            <div class="inbox1">techGuru</div>
+            <div class="inbox2">
+            <nav>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                </ul>
+            </nav></div></div>
+            <div class="box2">
+                <div class="inbox3"><span>Accolades in tech</span><br>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Voluptas, ducimus<br> doloribusnecessitatibus harum<br> aliquid quas, totam,laborumiure excepturi<br>alias reiciendis.Fugiat nesciunt quisquam<br> voluptatibus, ex aliquam <br>laboriosam! Provident, iste?
+       <p><button submit="submit">welcome</button></p>
+        </div>
+        <div class=".inbox4"> </div></div>
+    </div>
+     <div class="container">
+         <div class="firstbox">
+             <h1>Explore techguru courses</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Aliquam vel pariatur dicta, architecto odit alias, possimus<br> facilis cumque </p>
+         </div>
+         <div class="secondbox">
+             <div class="img1">HTML5</div>
+             <div class="img2">CSS3</div>
+             <div class="img3">JAVASCRIPT</div>
+         </div>
+         <div class="boot"></div>
+     </div>
+    <div class="contact">
+          <form action="">
+              <legend>
+             email:<input type="text">
+             <textarea name="text" id="submit" cols="30" rows="10">comment</textarea>
+             </legend>
+          </form>
+    </div>
+
+    
+</body>
+</html>

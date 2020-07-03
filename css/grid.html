@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display:grid;
+            grid-template-columns:repeat(3 ,1fr);
+            grid-gap:1em;
+            grid-auto-rows: minmax(100px,auto)
+           /* grid-auto-rows:100px;
+            grid-template-columns:70% 30%;
+
+            grid-column-gap:1em;
+            grid-row-gap:1em 
+            grid-gap:1em*/
+        }
+        .wrapper > div{
+            padding:20px;
+            background-color:aqua;
+            border:2px solid;
+            
+        
+        }
+        .wrapper > div:nth-child(odd){
+         background:#eee;
+         
+        }
+         .nested{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-gap:1em;
+            grid-auto-rows:50px
+        }
+        .nested>div{
+            border:1px solid red;
+            padding:1em
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim temporibus soluta commodi id, reprehenderit alias repudiandae consectetur magnam! Incidunt, molestiae in aperiam nihil illo similique, accusantium dolores distinctio eveniet tenetur officiis harum tempore minus maiores quia expedita voluptatem ipsam sapiente odio possimus accusamus voluptates fugiat. Cumque velit dolores repudiandae pariatur. Odit incidunt necessitatibus alias nisi soluta tempora quaerat a aspernatur debitis. Cumque molestias laudantium ducimus, repellendus corporis pariatur, soluta veniam voluptate maiores aperiam placeat, sunt doloribus. Inventore facere ad quisquam?</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure nihil ipsa, tenetur facilis eligendi blanditiis minus beatae ab tempora iste perferendis consequuntur, nulla sunt nostrum unde aspernatur tempore rerum. Nihil!</div>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim temporibus soluta commodi id, reprehenderit alias repudiandae consectetur magnam! Incidunt, molestiae in aperiam nihil illo similique, accusantium dolores distinctio eveniet tenetur officiis harum tempore minus maiores quia expedita voluptatem ipsam sapiente odio possimus accusamus voluptates fugiat. Cumque velit dolores repudiandae pariatur. Odit incidunt necessitatibus alias nisi soluta tempora quaerat a aspernatur debitis. Cumque molestias laudantium ducimus, repellendus corporis pariatur, soluta veniam voluptate maiores aperiam placeat, sunt doloribus. Inventore facere ad quisquam?</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure nihil ipsa, tenetur facilis eligendi blanditiis minus beatae ab tempora iste perferendis consequuntur, nulla sunt nostrum unde aspernatur tempore rerum. Nihil!</div>
+        <div class="nested">
+            <div>hello fsgdujjhdhdjjhwshsjksj</div>
+            <div>hello</div>
+            <div>hello</div>
+        </div>
+    </div> 
+
+</body>
+</html>

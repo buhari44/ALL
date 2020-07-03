@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+    .container1 {
+        display:flex;
+        justify-content:flex-end;
+        position:sticky;
+        top:0;
+    }
+    .nav ul{
+        padding:0;
+        margin:0;
+        display:flex;
+        
+        
+    }
+    h3{
+        text-align: center;
+        font-family:monospace;
+        font-size:30px;
+        
+    }
+    .nav li{
+        padding:20px;
+        list-style: none;
+    }
+    .nav a{
+        color:blueviolet;
+        text-transform:uppercase;
+        text-decoration: none
+    }
+
+    .container2{
+        display:flex;
+        margin-top:50px;
+        background: repeating-linear-gradient(50deg,white,blue)
+    }
+    .container2 #box2{
+        margin-top:100px;
+        margin:auto
+    }
+#box1{
+        order:2;
+        margin-top:40px;
+        margin:auto
+    }
+    img{
+        border-radius:30px;
+        width:20%
+    }
+    
+    
+.container3{
+    margin-top:10%
+}
+.container4{
+    display:flex;
+    border:2px solid;
+       
+}
+.container4 div{
+    border:2px solid blue
+    
+}
+@media(max-width:600px){
+    .container4{
+        
+        flex-direction: column;
+        
+    }
+}
+@media (max-width:600px){
+    .container4 div{
+        flex-basis:30px
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="nav">
+           <ul>
+               <li><a href="#">home</a></li>
+           <li><a href="#">services</a></li>
+           <li><a href="#">about</a></li>
+           <li><a href="#">contact</a></li></ul> 
+        </div>
+    </div>
+
+
+    <div class="container2">
+        <div id="box1"><img src="./images/7.png" alt=""></div>
+        <div id="box2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Quod iure provident illo incidunt perferendis <br>voluptatibus odit vitae aliquid dicta, sint vel,<br> sed facere nihil optio dolore quis eveniet necessitatibus dolor!<p><button type="submit">BUY</button></p></div>
+    </div>
+    <div class="container3">
+        <div id="box3"><span>what we do</span>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, provident atque quae rem beatae hic fugiat aspernatur exercitationem itaque earum! Similique ut iure architecto eligendi dolorem inventore fuga dolores quos.
+        </p>
+        </div>
+    </div>
+    <h3>products</h3>
+    <div class="container4">
+        
+        <div class="box4"><img src="./images/2.jpg"alt=""></div>
+        <div class="box-1"><img src="./images/3.jpg" alt=""></div>
+        <div class="box-2"><img src="./images/10.jpg" alt=""></div>
+        <div class="box-3"><img src="./images/12.jpg" alt=""></div>
+        <div class="box-4"><img src="./images/11.jpg" alt=""></div>
+        <div class="box-5"><img src="./images/13.jpg" alt=""></div>
+        <div class="box-6"><img src="./images/14.jpg" alt=""></div>
+    </div>
+    <div class="container5">
+        <div id="box5"></div>
+    </div>
+</body>
+</html>
