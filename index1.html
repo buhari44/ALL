@@ -19,7 +19,7 @@
         grid-template-columns: 1fr 4fr;
         position:sticky;
         top:0;
-        background:rgba(26,26,26,0.7)
+        background:rgba(26,26,26,1)
     }
     li{
         display:inline;
@@ -94,16 +94,17 @@
    
    }
    
+   
    .img1{
        text-align:center;
-       width: 100%;
+       width: 50%;
        height: 150%;
        padding:10px;
-
+        border-radius:50%;
        background:linear-gradient(rgba(26,26,26,0.7),rgba(26,26,26,0.7)),url("./images/15.jpg");
        background-size: cover;
-       background-repeat: no-repeat
-      
+       background-repeat: no-repeat;
+       
         }
         .img2{
             text-align:center;
@@ -122,15 +123,7 @@
        background-repeat: no-repeat
       
         }
-        .contact{
-            display: grid;
-            margin-top:10%;
-            grid-template-columns: 1fr;
-            grid-auto-rows:minmax(100px,auto);
-            justify-content: center;
-            background: rgba(121, 142, 212, 0.7);
-            
-        }
+
         @media(max-width:600px){
             a{
                 font-size:7px
@@ -152,7 +145,7 @@
         }
         section{
             background:rgba(26,26,26,0.7);
-            margin-top:20%;
+            margin-top:10%;
         }
    .text{
     text-align:center;
@@ -163,21 +156,82 @@
    }
         
         .boot>div{
-        flex-basis:6em;
-            
-            
-            
+        flex-basis:15em;      
         }
         h2{
             text-align: center;
             text-transform: uppercase;
             color:white;
-            word-spacing:0.6em
-        }
+            word-spacing:0.6em;
+            }
+.boxboot1{
+    background:linear-gradient(rgba(26,26,26,0.7),rgba(26,26,26,0.7)),blue;
+    border-top-left-radius:20px;
+    border-bottom-right-radius: 20px;
+    color:beige;
+    text-align: center;
+}
+.boxboot2{
+    background:rgba(26,26,26,0.7);
+    border-top-left-radius:20px;
+    border-bottom-right-radius: 20px;
+    color:beige;
+    text-align: center;
+}
+.boxboot3{
+    background:linear-gradient(rgba(26,26,26,0.7),rgba(26,26,26,0.7)),blue;
+    border-top-left-radius:20px;
+    border-bottom-right-radius: 20px;
+    color:beige;
+    text-align: center
+}
+.boxboot4{
+    background:rgba(26,26,26,0.7);
+    border-top-left-radius:20px;
+    border-bottom-right-radius: 20px;
+    color:beige;
+    text-align: center
+}
+@media(max-width:600px){
+    .boot{
+        display:flex;
+        flex-direction:column;
+    }
+    .boot>div{
+        margin:1em;
+        padding:1em
+    }
+}
+    .about{
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+       color: beige;
+        margin-top:20px;
+        grid-column-gap: 0;
+        justify-content: center;
+        padding: 2em;
+        
+    }
+    #me{
+        border-radius:50%;
+        justify-self: center;
+        border:1em solid;
+        
+    }
+    footer{
+        background:repeating-linear-gradient(90deg, black,blue);
+    }
+h5{
+    color: white;
+    text-align:center;
+    text-transform:uppercase;
+    font-size:1.5em;
+}
+h4{
+    line-height:1.5em
+}
 
-        form{
-            text-align: center
-        }
+
     </style>
 </head>
 <body>
@@ -206,9 +260,9 @@
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Aliquam vel pariatur dicta, architecto odit alias, possimus<br> facilis cumque </p>
          </div>
          <div class="secondbox">
-             <div class="img1">HTML5</div>
-             <div class="img2">CSS3</div>
-             <div class="img3">JAVASCRIPT</div>
+             <div class="img1"><span>GIT</span></div>
+             <div class="img2"><span>HTML5</span></div>
+             <div class="img3"><span>CSS</span></div>
          </div>
          <section>
                 <h2>enrol for our services</h2>
@@ -216,27 +270,32 @@
              
              <div class="boxboot1">
                 <p class="text">hire developer</p> 
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor ad voluptatem dicta veritatis rem eius, neque nihil dolorem. Quaerat laboriosam esse deserunt, veniam quod atque iusto cum minus placeat molestiae. </div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor ad voluptatem dicta veritatis rem eius, neque nihil dolorem. Quaerat laboriosam esse deserunt, veniam quod atque iusto cum minus placeat molestiae.<br>
+            <button type="submit">enroll now</button>
+            </div>
              <div class="boxboot2">
                 <p class="text">bootcamp</p> 
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit nulla vel expedita labore dolore placeat ad soluta vero, neque molestiae obcaecati iusto praesentium nesciunt. Sequi officia debitis quam maxime fugiat.</div>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit nulla vel expedita labore dolore placeat ad soluta vero, neque molestiae obcaecati iusto praesentium nesciunt. Sequi officia debitis quam maxime fugiat.
+                <br>
+                <button type="submit">enroll now</button></div>
              <div class="boxboot3">
                 <p class="text">Online section</p> 
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto incidunt id officiis saepe. Recusandae, velit nobis, repellendus assumenda optio cum provident suscipit quos corrupti sunt officiis iusto placeat maiores quibusdam!</div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto incidunt id officiis saepe. Recusandae, velit nobis, repellendus assumenda optio cum provident suscipit quos corrupti sunt officiis iusto placeat maiores quibusdam!
+                <br>
+                <button type="submit">enroll now</button></div>
              <div class="boxboot4">
                 <p class="text">software development/web development</p> 
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias assumenda, quibusdam itaque quidem perferendis commodi mollitia odio dolorem alias, excepturi culpa. Nemo nulla repellendus tempore, error quia reiciendis commodi delectus!</div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias assumenda, quibusdam itaque quidem perferendis commodi mollitia odio dolorem alias, excepturi culpa. Nemo nulla repellendus tempore, error quia reiciendis commodi delectus!<br>
+                <button type="submit">enroll now</button></div>
          </div>
-     </section>
-    <div class="contact">
-          <form action="">
-              <legend>
-             email:<input type="text">
-             <textarea name="text" id="submit" cols="30" rows="10">comment</textarea>
-             </legend>
-          </form>
-    </div>
+<footer>
+        <h5>about</h5>
+         <div class="about">
+             <img id="me" src="./images/me.jpg" alt=""width="30%">
+             <h4>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Assumenda eum minus<br> aliquam cupiditate voluptatum corporis <br>nesciunt repellat iste maxime dolorum, <br>itaque sequi animi delectus et omnis?<br> Voluptatibus consectetur quia repudiandae?</h4>
+         </div>
+         </footer>
+         </section>
 
-    
 </body>
 </html>
